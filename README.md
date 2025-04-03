@@ -74,7 +74,7 @@ GCC or Clang
 ##### Prepare the library
 
 ```shell
-export CC=<WinLibs GCC Path>
+export CC=<WinLibs GCC Path>  # for windows mingw64 shell
 go build -o build/ddns4cdn.a -buildmode=c-archive ./src/cgo/go
 ```
 
