@@ -51,6 +51,11 @@ Set `GOOS` and `GOARCH` to build for other platforms.
 - [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)  (MSVC, optional)
 
   `go build` doesn't support MSVC, but you can use MSVC to build exe and dll.
+  **go version support:**
+  [x] 1.21.3
+  [x] 1.22.0
+  [x] 1.23.6
+  [ ] 1.24.1
 
 ##### macOS / Linux
 
