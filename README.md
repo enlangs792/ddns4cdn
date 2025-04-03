@@ -51,11 +51,16 @@ Set `GOOS` and `GOARCH` to build for other platforms.
 - [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)  (MSVC, optional)
 
   `go build` doesn't support MSVC, but you can use MSVC to build exe and dll.
-  **go version support:**
-  [x] 1.21.3
-  [x] 1.22.0
-  [x] 1.23.6
-  [ ] 1.24.1
+
+**notice**
+- gcc:
+  - must from [WinLibs](https://winlibs.com/#download-release).
+  - default gcc version not support.
+- go version support:
+  - [x] 1.21.3
+  - [x] 1.22.0
+  - [x] 1.23.6
+  - [ ] 1.24.1
 
 ##### macOS / Linux
 
@@ -63,11 +68,13 @@ GCC or Clang
 
 `go build` can use GCC or Clang, set `CC` to switch.
 
+
 #### Static library
 
 ##### Prepare the library
 
 ```shell
+export CC=<WinLibs GCC Path>
 go build -o build/ddns4cdn.a -buildmode=c-archive ./src/cgo/go
 ```
 
